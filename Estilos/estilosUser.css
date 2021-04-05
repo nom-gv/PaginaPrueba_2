@@ -29,6 +29,7 @@ body {
 	text-decoration: none;
 	font-family: 'Raleway', Arial;
 	color: white;
+	font-weight: bold;
 	font-size: 1.2rem;
 	cursor:pointer;
 	-webkit-transition:all .45s ease; 
@@ -48,7 +49,7 @@ body {
 	display: flex;
 	flex-direction: column;
   	align-items: center;
-  	height: 103%;
+  	height: 100%;
   	font-weight: bold;
 }
 #configuracion h2 {
@@ -106,7 +107,7 @@ label, input {
 	border: none;
 	outline: none;
 }
-#formuColor input[type="button"] {
+#formuColor input[type="submit"] {
 	font-family: 'Raleway', Arial;
 	border: none;
 	background: none;
@@ -118,7 +119,7 @@ label, input {
 	font-size: 1rem;
 	font-weight: bold;
 }
-#formuColor input[type="button"]:hover {
+#formuColor input[type="submit"]:hover {
 	background: rgb(50,80,102);
 	color: white;
 }

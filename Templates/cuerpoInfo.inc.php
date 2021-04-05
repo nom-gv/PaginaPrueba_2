@@ -1,6 +1,5 @@
 <?php
 include "conexion.inc.php";
-$resultado = mysqli_query($con, "select * from mascota");
 ?>	
 	<div id="cuerpoForm" class="cuerpo">
 		<div>

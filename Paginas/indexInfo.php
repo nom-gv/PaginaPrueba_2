@@ -8,13 +8,12 @@ $contraseña=$_POST['contraseña'];
 session_start();
 $_SESSION['usuario']=$usuario;
 
-$consulta="SELECT * FROM usuario where usuario='$usuario' and contraseña='$contraseña'";
+$consulta="SELECT * FROM usuario u, persona p where  u.usuario='$usuario' and u.contraseña='$contraseña'  and p.ci=u.ci  and p.carrera = 'Informatica'";
 $resultado=mysqli_query($con,$consulta);
 $filas=mysqli_num_rows($resultado);
 if($filas) { 	
-	header("location:user.php");	
+	header("location:user.php?usuario=$usuario");
 }
 mysqli_free_result($resultado);
-mysqli_close($con);
 include "../Templates/pie.inc.php";
 ?>
